@@ -97,3 +97,49 @@ $ git reeset HEAD^ //마지막 커밋 삭제
 $ git reset --hard HEAD // 마지막 커밋 상태로 되돌림. 
 $ git resest HEAD * // 스테이징을 언스테이징으로 변경, ref
 ```
+
+## Branch 
+- master 브랜치를 특정 커밋으로 옮기기
+```
+ git checkout better_branch 
+ git merge --strategy=ours master
+ git checkout master
+ git merge better_branch 
+ 
+```
+- 브랜치 목록 
+```
+$ git branch // 로컬 
+$ git branch -r //리모트 
+$ git branch -a // 로컬, 리모트 포함된 모든 브랜치 보기 
+
+```
+
+- 브랜치 생성 
+```
+git branch new master  //master --> new 브랜치 생성
+git push origin new  // new 브랜치를 리모트로 보내기 
+```
+
+- 브랜치 삭제  
+```
+git branch -D {삭제할 브랜치 명} // local
+git push origin :{the_remote_barnch} // remote
+```
+- 빈 브랜치 생성 
+```
+git checkout --orphan {새로운 브랜치명}
+git commit -a // 커밋해야 새로운 브랜치 생성 
+git checkout -b new-branch // 브랜치 생성과 동시에 체크아웃 
+
+```
+
+- 리모트 브랜치 가져오기 
+```
+git chekout -t orgin/{가져올 브랜치명} //ref
+```
+
+- 브랜치 이름 변경 
+```
+git branch -m {new name} //ref
+```
