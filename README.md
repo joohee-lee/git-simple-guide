@@ -1,3 +1,15 @@
+# git 역할 
+- 소스 병합 (merge, rebase)
+- 소스 리비전 관리 (reset, commit, branch)
+- 소스 릴리즈 (push)
+- 소스 변경사항 컴포 (diff, log)
+
+# git 지원
+- 윈도우즈
+- 맥
+- 리눅스
+- 유닉스 
+
 # git 명령어 모음 
 
 ## 구조 
@@ -49,6 +61,8 @@
 ```
 
 - 참고 
+    - 누구나 쉽게 이해 할 수 있는 git  <https://backlog.com/git-tutorial/kr/>
+    - git used <https://github.com/KennethanCeyer/tutorial-git>
     - git download <https://code.google.com/archive/p/git-osx-installer/downloads>
     - git cheat sheet <http://rogerdudler.github.io/git-guide/files/git_cheat_sheet.pdf>
     - git guide Ko <http://rogerdudler.github.io/git-guide/index.ko.html>
