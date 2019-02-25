@@ -77,3 +77,9 @@ $ git log // 모든 커밋로그 확인
 $ git log -3 //최근 3개 커밋로그 확인 
 $ git log --pretty=oneline // 각 커밋을 한 줄로 표시 
 ```
+- 커밋 취소 
+```
+$ git reeset HEAD^ //마지막 커밋 삭제
+$ git reset --hard HEAD // 마지막 커밋 상태로 되돌림. 
+$ git resest HEAD * // 스테이징을 언스테이징으로 변경, ref
+```
