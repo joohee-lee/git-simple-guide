@@ -143,3 +143,24 @@ git chekout -t orgin/{가져올 브랜치명} //ref
 ```
 git branch -m {new name} //ref
 ```
+
+
+# conventionalcommits
+https://www.conventionalcommits.org/ko/v1.0.0/#%ea%b0%9c%ec%9a%94
+
+## git commit message 
+## 커밋메세지 
+
+[기능 추가] feat(수정한 기능 혹은 파일 이름): 커밋 내용
+[제거] remove(기능 혹은 파일 이름): 커밋 내용
+[버그픽스] fix(기능 혹은 파일 이름): 커밋 내용
+
+
+[제거] remove(): 커밋 내용
+
+remove(commbot-head) : >>>>>>> Stashed changes  삭제 
+
+ex)
+feat(수정한 기능 혹은 파일 이름): 커밋 내용
+feat(header): 마크업 등록
+feat(수정한 기능 혹은 파일 이름): 커밋 내용
